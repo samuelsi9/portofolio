@@ -3,62 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="cool.css">
+  <title>Portfolio - Samuel Ilunga</title>
+  <link rel="stylesheet" href="col.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- Hamburger Menu for Mobile -->
-<div class="hamburger" id="hamburger">
-  <i class="fas fa-bars"></i>
-</div>
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
   <div class="container">
-    
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <div class="profile fade-in">
+    <aside class="sidebar">
+      <div class="profile fade-up">
         <img src="https://i.pravatar.cc/200" alt="Profile">
         <h2>Samuel Ilunga</h2>
         <p>Full Stack Developer</p>
-        
-        <!-- Social Links -->
         <div class="social">
           <a href="#"><i class="fab fa-github"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-        
         <a href="#" class="btn">Download CV</a>
       </div>
+      <nav class="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </aside>
-    
+
     <!-- Main Content -->
     <main class="main-content">
-      
-     <!-- Hero Section -->
-<section class="hero fade-in">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Hello, I'm <span class="highlight">Samuel Ilunga</span> 👋</h1>
-      <p class="tagline">I create scalable and modern solutions for web, mobile, AI & DevOps.</p>
-      <p class="typing-text">I build <span id="typed-text"></span></p>
-      <div class="hero-buttons">
-        <a href="#contact" class="hire-btn">Hire Me</a>
-        <a href="#" class="btn">Download CV</a>
-      </div>
-      <div class="hero-social">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="https://i.pravatar.cc/250" alt="Samuel Ilunga">
-    </div>
-  </div>
-</section>
-      
+      <!-- Hero Section -->
+      <section class="hero fade-up">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Samuel Ilunga</span> 👋</h1>
+            <p class="tagline">I create scalable and modern solutions for web, mobile, AI & DevOps.</p>
+            <p class="typing-text">I build <span id="typed-text"></span></p>
+            <div class="hero-buttons">
+              <a href="#contact" class="hire-btn">Hire Me</a>
+              <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="hero-social">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="https://i.pravatar.cc/250" alt="Samuel Ilunga">
+          </div>
+        </div>
+      </section>
+
       <!-- Services Section -->
       <section class="services fade-up" id="services">
         <h2>My Services</h2>
@@ -85,12 +86,11 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Experience Section -->
       <section class="experience fade-up" id="experience">
         <h2>Experience</h2>
         <div class="timeline">
-          
           <div class="timeline-item">
             <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
             <div class="timeline-content">
@@ -99,7 +99,6 @@
               <p>Built scalable web & mobile apps using modern frameworks and cloud technologies.</p>
             </div>
           </div>
-          
           <div class="timeline-item">
             <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
             <div class="timeline-content">
@@ -108,7 +107,6 @@
               <p>Delivered AI & DevOps solutions for startups, helping them scale and automate workflows.</p>
             </div>
           </div>
-          
           <div class="timeline-item">
             <div class="timeline-icon"><i class="fas fa-code"></i></div>
             <div class="timeline-content">
@@ -116,12 +114,9 @@
               <span>2019 - 2021</span>
               <p>Created responsive websites and e-commerce platforms for local businesses.</p>
             </div>
-       
           </div>
-          <!-- Motivation Section -->
-
         </div>
-        <section class="motivation fade-in">
+        <section class="motivation fade-up">
           <h2>My Motivation</h2>
           <p>
             I am driven by the desire to solve complex problems and create solutions that make a real impact. 
@@ -129,8 +124,9 @@
           </p>
         </section>
       </section>
-       <!-- Footer -->
-       <footer class="footer fade-in">
+
+      <!-- Footer -->
+      <footer class="footer fade-up">
         <p>© 2025 Samuel Ilunga. All rights reserved.</p>
         <div class="social">
           <a href="#"><i class="fab fa-github"></i></a>
@@ -139,52 +135,8 @@
         </div>
       </footer>
     </main>
-    
-    <!-- Right Navigation -->
-    <nav class="right-nav">
-      <a href="#"><i class="fas fa-home"></i></a>
-      <a href="#"><i class="fas fa-user"></i></a>
-      <a href="#"><i class="fas fa-briefcase"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-    </nav>
-   
   </div>
-  <script>
-    const hamburger = document.getElementById("hamburger");
-const sidebar = document.getElementById("sidebar");
 
-hamburger.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
-});
-   const words = ["Web Apps", "Mobile Apps", "AI Solutions", "DevOps Pipelines"];
-let i = 0, j = 0, currentWord = '', isDeleting = false;
-const typedText = document.getElementById("typed-text");
-
-function type() {
-  if (i >= words.length) i = 0;
-  const fullWord = words[i];
-
-  if (!isDeleting) {
-    currentWord = fullWord.substring(0, j+1);
-    typedText.textContent = currentWord;
-    j++;
-    if (currentWord === fullWord) {
-      isDeleting = true;
-      setTimeout(type, 1000);
-      return;
-    }
-  } else {
-    currentWord = fullWord.substring(0, j-1);
-    typedText.textContent = currentWord;
-    j--;
-    if (currentWord === '') {
-      isDeleting = false;
-      i++;
-    }
-  }
-  setTimeout(type, isDeleting ? 100 : 200);
-}
-type();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
