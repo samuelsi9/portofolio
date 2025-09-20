@@ -303,24 +303,20 @@ document.querySelectorAll('.timeline-icon').forEach(icon => {
   icon.style.animationDelay = `${randomDelay}s`;
 });
 
-
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".timeline-item").forEach((item, i) => {
-  gsap.to(item, {
-    opacity: 1,
-    rotationY: 0,
-    rotationX: 0,
-    y: 0,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: item,
-      start: "top 85%",
-      end: "top 60%",
-      toggleActions: "play none none reverse",
-    },
-  });
+gsap.from(".timeline-item", {
+  opacity: 0,
+  y: 100,
+  rotationX: -30,
+  duration: 1,
+  ease: "power3.out",
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".timeline",
+    start: "top 90%",
+    once: true // joue seulement la première fois
+  }
 });
 </script>
   </script>
