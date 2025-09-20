@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="cool.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile fade-in">
+        <img src="https://i.pravatar.cc/200" alt="Profile">
+        <h2>Samuel Ilunga</h2>
+        <p>Full Stack Developer</p>
+        
+        <!-- Social Links -->
+        <div class="social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skill"><span>Python</span><div class="progress"><div style="width: 90%"></div></div></div>
+        <div class="skill"><span>React</span><div class="progress"><div style="width: 85%"></div></div></div>
+        <div class="skill"><span>Django</span><div class="progress"><div style="width: 80%"></div></div></div>
+        <div class="skill"><span>Flutter</span><div class="progress"><div style="width: 75%"></div></div></div>
+      </div>
+
+      <!-- Languages Section -->
+      <div class="languages">
+        <h3>Languages</h3>
+        <p>🇫🇷 French - Native</p>
+        <p>🇬🇧 English - Professional</p>
+      </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Hero Section -->
+      <section class="hero fade-in">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Samuel Ilunga</span> 👋</h1>
+            <p class="tagline">I create scalable and modern solutions for web, mobile, AI & DevOps.</p>
+            <p class="typing-text">I build <span id="typed-text"></span></p>
+            <div class="hero-buttons">
+              <a href="#contact" class="hire-btn">Hire Me</a>
+              <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="hero-social">
+              <a href="mailto:yourname@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="tel:+1234567890" title="Call me"><i class="fas fa-phone"></i></a>
+              <a href="https://instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="https://i.pravatar.cc/250" alt="Samuel Ilunga">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Services Section -->
+      <section class="services fade-up" id="services">
+        <h2>My Services</h2>
+        <div class="grid">
+          <div class="card"><i class="fas fa-code"></i><h3>Web Development</h3><p>Responsive, modern websites with clean code.</p></div>
+          <div class="card"><i class="fas fa-mobile-alt"></i><h3>Mobile Apps</h3><p>Cross-platform apps built with Flutter.</p></div>
+          <div class="card"><i class="fas fa-brain"></i><h3>AI Engineer</h3><p>Smart AI-powered solutions for businesses.</p></div>
+          <div class="card"><i class="fas fa-server"></i><h3>DevOps</h3><p>Cloud deployment, CI/CD, Docker & Kubernetes.</p></div>
+        </div>
+      </section>
+      
+      <!-- Experience Section -->
+      <section class="experience fade-up" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-laptop-code"></i></div><div class="timeline-content"><h3>Full Stack Developer</h3><span>2023 - Present | TechCorp</span><p>Built scalable web & mobile apps using modern frameworks and cloud technologies.</p></div></div>
+          <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-rocket"></i></div><div class="timeline-content"><h3>Freelance Developer</h3><span>2021 - 2023</span><p>Delivered AI & DevOps solutions for startups, helping them scale and automate workflows.</p></div></div>
+          <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-code"></i></div><div class="timeline-content"><h3>Junior Web Developer</h3><span>2019 - 2021</span><p>Created responsive websites and e-commerce platforms for local businesses.</p></div></div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects fade-up" id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card"><img src="project1.png" alt="Project 1"><h3>AI Chatbot</h3><p>Custom chatbot built with Python + NLP for a startup.</p><a href="#">View Project</a></div>
+          <div class="card"><img src="project2.png" alt="Project 2"><h3>E-commerce Website</h3><p>Full-stack app using Django + React + Stripe.</p><a href="#">View Project</a></div>
+        </div>
+      </section>
+
+      <!-- Motivation Section -->
+      <section class="motivation fade-in">
+        <h2>My Motivation</h2>
+        <p>I am driven by the desire to solve complex problems and create solutions that make a real impact. 
+          I believe in continuous learning, pushing the boundaries of technology, and inspiring others through my work.</p>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials fade-up" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial"><p>"Samuel is a talented developer. He delivered on time and exceeded expectations!"</p><h4>- Client from TechCorp</h4></div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact fade-up" id="contact">
+        <h2>Let’s Work Together</h2>
+        <p>Have an idea or a project? Let’s talk 🚀</p>
+        <a href="mailto:yourname@email.com" class="btn">Get in Touch</a>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="footer fade-in">
+        <p>© 2025 Samuel Ilunga. All rights reserved.</p>
+        <div class="social">
+          <a href="mailto:yourname@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+1234567890" title="Call me"><i class="fas fa-phone"></i></a>
+          <a href="https://instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </main>
+    
+    <!-- Right Navigation -->
+    <nav class="right-nav">
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+      <a href="#"><i class="fas fa-briefcase"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </nav>
+   
+  </div>
+</body>
+</html>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  
   <link rel="stylesheet" href="cool.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -16,48 +17,129 @@
   <div class="container">
     
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <div class="profile fade-in">
-        <img src="https://i.pravatar.cc/200" alt="Profile">
-        <h2>Samuel Ilunga</h2>
-        <p>Full Stack Developer</p>
-        
-        <!-- Social Links -->
-        <div class="social">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+   <aside class="sidebar" id="sidebar">
+  <div class="profile fade-in">
+    <img src="SI9.jpeg" alt="Profile">
+    <h2>Samuel Ilunga</h2>
+    <p>Full Stack Developer</p>
+    
+    <!-- Social Links -->
+    <div class="social">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    
+    <a href="#" class="btn">Download CV</a>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="skills">
+    <h3>My Skills</h3>
+    <ul>
+      <li>
+        <span class="skill-name">Python</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 90%;"></div>
         </div>
-        
-        <a href="#" class="btn">Download CV</a>
-      </div>
-    </aside>
+      </li>
+      <li>
+        <span class="skill-name">Django</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">React</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">Java</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 75%;"></div>
+        </div>
+      </li>
+     
+      <li>
+        <span class="skill-name">Linux Command</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">Français</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">Anglais</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
     
     <!-- Main Content -->
     <main class="main-content">
       
      <!-- Hero Section -->
-<section class="hero fade-in">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Hello, I'm <span class="highlight">Samuel Ilunga</span> 👋</h1>
-      <p class="tagline">I create scalable and modern solutions for web, mobile, AI & DevOps.</p>
-      <p class="typing-text">I build <span id="typed-text"></span></p>
-      <div class="hero-buttons">
-        <a href="#contact" class="hire-btn">Hire Me</a>
-        <a href="#" class="btn">Download CV</a>
+     <section class="hero fade-in">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="highlight">Samuel Ilunga</span> 👋</h1>
+          <p class="tagline">I create scalable and modern solutions for web, mobile, AI & DevOps.</p>
+          <p class="typing-text">I build <span id="typed-text"></span></p>
+          <div class="hero-buttons">
+            <a href="#contact" class="hire-btn">Hire Me</a>
+            <a href="#" class="btn">Download CV</a>
+          </div>
+          <div class="hero-social">
+            <!-- Email -->
+            <a href="mailto:yourname@email.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+905338862316" target="_blank" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/samuelsi9" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          
+            <!-- Twitter/X -->
+            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          
+          
+          
+            <!-- Phone -->
+            <a href="tel:+905338862316" title="Call me">
+              <i class="fas fa-phone"></i>
+            </a>
+          
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/samuel_ilunga/" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="SI9.jpeg" alt="Samuel Ilunga">
+        </div>
       </div>
-      <div class="hero-social">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="https://i.pravatar.cc/250" alt="Samuel Ilunga">
-    </div>
-  </div>
-</section>
+    </section>
       
       <!-- Services Section -->
       <section class="services fade-up" id="services">
@@ -133,9 +215,40 @@
        <footer class="footer fade-in">
         <p>© 2025 Samuel Ilunga. All rights reserved.</p>
         <div class="social">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <!-- Email -->
+          <a href="mailto:samuelfrederick9@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+      
+          <!-- GitHub -->
+          <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+      
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+      
+          <!-- Twitter/X -->
+          <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+      
+          <!-- WhatsApp -->
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+      
+          <!-- Phone -->
+          <a href="tel:+1234567890" title="Call me">
+            <i class="fas fa-phone"></i>
+          </a>
+      
+          <!-- Instagram -->
+          <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </footer>
     </main>
@@ -185,6 +298,32 @@ function type() {
   setTimeout(type, isDeleting ? 100 : 200);
 }
 type();
+document.querySelectorAll('.timeline-icon').forEach(icon => {
+  const randomDelay = Math.random() * 2; // Random start
+  icon.style.animationDelay = `${randomDelay}s`;
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".timeline-item").forEach((item, i) => {
+  gsap.to(item, {
+    opacity: 1,
+    rotationY: 0,
+    rotationX: 0,
+    y: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: item,
+      start: "top 85%",
+      end: "top 60%",
+      toggleActions: "play none none reverse",
+    },
+  });
+});
+</script>
   </script>
+
 </body>
 </html>
