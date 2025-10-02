@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Website projects - Samuel Ilunga</title>
+  <link rel="stylesheet" href="col.css">
+  <link rel="stylesheet" href="sidebar.css"> <!-- our new sidebar CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile fade-in">
+        <img src="SI9.jpeg" alt="Profile">
+        <h2>Samuel Ilunga</h2>
+        <p>Full Stack Developer</p>
+
+        <!-- Social Links -->
+        <div class="social">
+          <a href="https://github.com/samuelsi9"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i></a>
+          <a href="tel:+905338862316"><i class="fas fa-phone"></i></a>
+          <a href="https://wa.me/+905338862316"><i class="fab fa-whatsapp"></i></a>
+
+
+        </div>
+
+        <a href="cv.docx"  class="btn" download>Download CV</a>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills">
+        <h3>My Skills</h3>
+        <ul>
+          <li><span class="skill-name">Python</span></li>
+          <li><span class="skill-name">Django</span></li>
+          <li><span class="skill-name">React</span></li>
+          <li><span class="skill-name">Java</span></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="page-header">
+        <h1>Website projects</h1>
+        <p>Voici quelques-uns de mes projets récents en Web, Mobile, AI et DevOps.</p>
+      </header>
+
+      <!-- Projects Grid -->
+      <section class="projects-grid">
+        <div class="project-card">
+          <i class="fas fa-shopping-cart"></i>
+          <a href="https://strongrocks.org/">
+          <h3> StrongRocks Platform</h3>
+          <p>  This is one of the applications that i have made for a client .</p>
+          </a>
+          <a href="https://strongrocks.org" target="_blank" class="btn">Check the website</a>
+        </div>
+
+        <div class="project-card">
+          <i class="fas fa-calculator"></i>
+          <h3> Calsi</h3>
+          <p> i built this app for saving my income .</p>
+          <a href="https://ledieusam.com/" target="_blank" class="btn">Check the website </a>
+        </div>
+
+        <div class="project-card">
+          <i class="fas fa-spoon"></i>
+          <h3>omnifood </h3>
+          <p>Application mob</p>
+          <a href="https://github.com/samuelsi9/flutter-todo" target="_blank" class="btn">Check the website</a>
+        </div>
+
+      
+      </section>
+
+      <!-- Retour -->
+      <footer style="text-align:center; margin:20px;">
+        <a href="index.html" class="btn">⬅ Back To The Home Page</a>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Hamburger JS -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
