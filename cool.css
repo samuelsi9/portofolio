@@ -149,7 +149,7 @@ body {
   margin-top: 50px;
 }
 .experience h2 {
-  margin-bottom: 30px; color: #111827; text-align: left;
+  margin-bottom: 30px; color: #2563eb; text-align: left;
 }
 .timeline {
   position: relative;
@@ -206,7 +206,7 @@ body {
 .timeline-content p { color: #374151; font-size: 15px; line-height: 1.6; }
 
 /* ========================= SERVICES ========================= */
-.services h2 { margin-bottom:20px; color:#111827; text-align:center; }
+.services h2 { margin-bottom:20px;color: #2563eb; text-align:center; }
 .services .grid {
   display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:20px;
 }
